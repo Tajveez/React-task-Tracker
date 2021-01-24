@@ -2,9 +2,10 @@ import PropTypes from 'prop-types'
 
 const Header = ({title}) => {
     return (
-        <div>
-           <h1 style={headerStyles}> {title} </h1>
-        </div>
+        <header className="header">
+           <h1> {title} </h1>
+           <button className="btn">Add</button>
+        </header>
     )
 }
 
@@ -15,8 +16,9 @@ Header.defaultProps = {
 Header.protoTpyes = {
     title: PropTypes.string
 }
-const headerStyles = {
-    color: 'greenyellow',
-    backgroundColor: 'purple'
-}
+
+// const headerStyles = {
+//     color: 'greenyellow',
+//     backgroundColor: 'purple'
+// }
 export default Header
