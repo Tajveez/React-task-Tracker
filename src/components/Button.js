@@ -1,10 +1,7 @@
-const Button = ({ color, text }) => {
-  const triggerClick = (e) => {
-    console.log(e);
-  };
+const Button = ({ color, text, onClick }) => {
   return (
     <button
-      onClick={triggerClick}
+      onClick={onClick}
       style={{
         backgroundColor: color,
       }}
